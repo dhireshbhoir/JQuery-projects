@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 16px Arial, Helvetica, sans-serif;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/ipl-single-page-app.appspot.com/o/team_logo%2FMCG_Panorama1_web.jpg?alt=media&token=ee7d4cc1-c415-4d2a-8c25-73f947c355ce");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1,
+h3 {
+    font: normal 24px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+/*-----------------
+	The Header
+------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    z-index: 100;
+    background-color: #282b2c;
+    padding: 0px 10px;
+    color: #fff;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+    width: 80px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header h2.tzine {
+    float: right;
+    opacity: 0.9;
+}
+
+header h2.tzine:hover {
+    opacity: 1;
+}
+
+header h2.tzine a {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 3px;
+    background-color: #4f4f4f;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 20px 15px;
+    }
+    header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+}
+
+
+/*-----------------
+	Main Content
+------------------*/
+
+.main-content {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 100px 25px 100px 25px;
+    padding: 0 10px;
+}
+
+.main-content h3 {
+    font-size: 28px;
+    color: #5a96b9;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+}
+
+
+/*-------------------
+	All Products Page
+--------------------*/
+
+
+/*	Products List	*/
+
+.all-products h3 {
+    opacity: 0;
+}
+
+.products-list {
+    list-style: none;
+    margin-left: 25px;
+    max-width: 2000px;
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+    font-size: 0;
+}
+
+.all-products.visible .products-list,
+.all-products.visible .filters,
+.all-products.visible h3 {
+    opacity: 1;
+    transition: 1s;
+    pointer-events: auto;
+}
+
+.products-list>li {
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    text-align: left;
+    font: normal 12px sans-serif;
+    background-color: #00ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
+    margin: 0 12px 14px 0;
+    padding: 25px;
+}
+
+.products-list>li.hidden {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+/* The product image */
+
+.products-list .product-photo {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+
+/* The product name */
+
+.products-list h2 {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    margin: 0;
+}
+
+.products-list h2 a {
+    text-decoration: none;
+    color: #00F5FF;
+    background-color: #4f4f4f;
+}
+
+
+/* Product description */
+
+.products-list .product-description {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 14px;
+    line-height: 1.45;
+    white-space: normal;
+    max-width: 200px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.products-list .product-description li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.products-list .product-description li:first-child {
+    display: block;
+}
+
+.products-list .product-description li span {
+    font-weight: bold;
+}
+
+.products-list .highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.products-list>li:hover .highlight {
+    opacity: 1;
+}
+
+
+/* Making the list responsive */
+
+@media (max-width: 800px) {
+    .products-list .product-photo {
+        width: 225px;
+    }
+    .products-list .product-description {
+        max-width: 225px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #myModal .modal-dialog {
+        width: 800px;
+        background-color: #5895DB;
+    }
+}
+
+.modal-header {
+    background-color: #ffbf80;
+    ;
+}
+
+.modal-title {
+    font-family: Serif;
+    font-size: 35px;
+}
+
+.modal-body {
+    background-color: #99ccff;
+}
+
+.modal-body.thumbnail {
+    background-color: #ffffcc;
+}
+
+.dropdown-menu {
+    background-color: #5a96b9;
+}
+
+.thumbnail img {
+    margin-top: 20px;
+    border: 1px solid #13506D;
+}
