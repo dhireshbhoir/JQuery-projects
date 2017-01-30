@@ -102,7 +102,6 @@ header h2.tzine a {
 
 
 /*-------------------
-<<<<<<< HEAD
 	All teams Page
 --------------------*/
 
@@ -114,19 +113,6 @@ header h2.tzine a {
 }
 
 .teams-list {
-=======
-	All Products Page
---------------------*/
-
-
-/*	Products List	*/
-
-.all-products h3 {
-    opacity: 0;
-}
-
-.products-list {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     list-style: none;
     margin-left: 25px;
     max-width: 2000px;
@@ -136,25 +122,15 @@ header h2.tzine a {
     font-size: 0;
 }
 
-<<<<<<< HEAD
 .all-teams.visible .teams-list,
 .all-teams.visible .filters,
 .all-teams.visible h3 {
-=======
-.all-products.visible .products-list,
-.all-products.visible .filters,
-.all-products.visible h3 {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     opacity: 1;
     transition: 1s;
     pointer-events: auto;
 }
 
-<<<<<<< HEAD
 .teams-list>li {
-=======
-.products-list>li {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     box-sizing: border-box;
     display: inline-block;
     cursor: pointer;
@@ -169,25 +145,15 @@ header h2.tzine a {
     padding: 25px;
 }
 
-<<<<<<< HEAD
 .teams-list>li.hidden {
-=======
-.products-list>li.hidden {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     opacity: 0.2;
     pointer-events: none;
 }
 
 
-<<<<<<< HEAD
 /* The team image */
 
 .teams-list .team-photo {
-=======
-/* The product image */
-
-.products-list .product-photo {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     display: block;
     text-align: center;
     width: 200px;
@@ -196,15 +162,9 @@ header h2.tzine a {
 }
 
 
-<<<<<<< HEAD
 /* The team name */
 
 .teams-list h2 {
-=======
-/* The product name */
-
-.products-list h2 {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     text-align: center;
     display: block;
     font-size: 18px;
@@ -215,49 +175,15 @@ header h2.tzine a {
     margin: 0;
 }
 
-<<<<<<< HEAD
 .teams-list h2 a {
-=======
-.products-list h2 a {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     text-decoration: none;
     color: #00F5FF;
     background-color: #4f4f4f;
 }
 
 
-<<<<<<< HEAD
 
 .teams-list .highlight {
-=======
-/* Product description */
-
-.products-list .product-description {
-    margin-top: 20px;
-    color: #5d5d5d;
-    font-size: 14px;
-    line-height: 1.45;
-    white-space: normal;
-    max-width: 200px;
-    margin-bottom: 20px;
-    list-style: none;
-}
-
-.products-list .product-description li {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.products-list .product-description li:first-child {
-    display: block;
-}
-
-.products-list .product-description li span {
-    font-weight: bold;
-}
-
-.products-list .highlight {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     position: absolute;
     top: 0;
     left: 0;
@@ -268,11 +194,7 @@ header h2.tzine a {
     transition: 0.4s;
 }
 
-<<<<<<< HEAD
 .teams-list>li:hover .highlight {
-=======
-.products-list>li:hover .highlight {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
     opacity: 1;
 }
 
@@ -280,17 +202,10 @@ header h2.tzine a {
 /* Making the list responsive */
 
 @media (max-width: 800px) {
-<<<<<<< HEAD
     .teams-list .team-photo {
         width: 225px;
     }
     .teams-list .team-description {
-=======
-    .products-list .product-photo {
-        width: 225px;
-    }
-    .products-list .product-description {
->>>>>>> b5690db790abd458ed2b538a5ff97e78e2550eb8
         max-width: 225px;
     }
 }
